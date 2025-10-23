@@ -103,6 +103,9 @@
                         <th>Universitas Asal</th>
                         <td><?php echo htmlspecialchars($_POST['universitas_asal']); ?></td>
                     </tr>
+                    <tr>
+                        <th>Program Studi</th>
+                        <td><?php echo htmlspecialchars($_POST['program_studi']); ?></td>
                 <div class="back-button">
                     <a href="index.html">Kembali ke Form Registrasi</a>
                 </div>
