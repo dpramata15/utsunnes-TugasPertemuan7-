@@ -78,12 +78,31 @@
     <body>
         <div class="container">
             <h1>Data Registrasi User</h1>
-            
             <?php if (isset($_POST['submit'])): ?>
                 <div class="success-message">
                     Registrasi Berhasil!
                 </div>
-                
+                <table>
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td><?php echo htmlspecialchars($_POST['nama_lengkap']); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <td><?php echo htmlspecialchars($_POST['jenis_kelamin']); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td><?php echo nl2br(htmlspecialchars($_POST['alamat'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Agama</th>
+                        <td><?php echo htmlspecialchars($_POST['agama']); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Universitas Asal</th>
+                        <td><?php echo htmlspecialchars($_POST['universitas_asal']); ?></td>
+                    </tr>
                 <div class="back-button">
                     <a href="index.html">Kembali ke Form Registrasi</a>
                 </div>
